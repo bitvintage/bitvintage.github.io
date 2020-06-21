@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What are games?</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900" rel="stylesheet">  
+    <link rel="icon" href="/images/bitvintage-favicon.ico">
+  </head>
+  <body>
+
+        <!-- HEADER ----------------------->
+        <header>
+          <div class="container">
+            <nav class="main-nav">
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/blog.html">updates</a></li>
+                <li><a href="https://www.mercari.com/u/560477422/">shop</a></li>
+                <li><a href="/tenoff.html">$10 OFF</a></li>
+              </ul>
+            </nav>
+            <a href="/">  
+                <div class="logo-container">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+          </div>
+        </header>
+      
+
+        <!-- CONTENT ----------------------->
+        <div class="content">
+            <div class="container">
+  <h2 class="spacing">What are games?</h2>
+
+  <div class="blog-post spacing">
+    <p class="summary">Information<span class="date">June 15, 2020</span></p>
+    <p>Coffee is a brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant. The Coffea plant is native to subtropical Africa and some islands in southern Asia. The plant was exported from Africa to countries around the world and coffee plants are now cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India, and Africa. The two most commonly grown are the highly regarded arabica, and the less sophisticated but stronger and more hardy robusta. Once ripe, coffee beans are picked, processed, and dried. Green (unroasted) coffee beans are one of the most traded agricultural commodities in the world. Once traded, the coffee beans are roasted to varying degrees, depending on the desired flavor. Roasted beans are ground and brewed to produce coffee as a beverage.</p>
+
+<p>Source / Read more <a href="https://en.wikipedia.org/wiki/Coffee">Wikipedia</a>.</p>
+
+  </div>
+</div>
+        </div>
+      
+      
+        <!-- FOOTER ----------------------->
+        <footer>
+            <a href="/">  
+                <div class="logo-container footer-logo">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+            <div class="container copyright">
+                Copyright &copy; <script type="text/javascript">
+                document.write("2019 - "+ new Date().getFullYear());
+                </script> <!-- bitvintagegalleria.com -->
+            </div>
+        </footer>
+    </body>
+   
+
+    <!-- SLIDE SHOW SCRIPT -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4500);
+        }
+    </script>
+    
+</html>

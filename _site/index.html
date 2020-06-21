@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bit.vintage</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900" rel="stylesheet">  
+    <link rel="icon" href="/images/bitvintage-favicon.ico">
+  </head>
+  <body>
+
+        <!-- HEADER ----------------------->
+        <header>
+          <div class="container">
+            <nav class="main-nav">
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/blog.html">updates</a></li>
+                <li><a href="https://www.mercari.com/u/560477422/">shop</a></li>
+                <li><a href="/tenoff.html">$10 OFF</a></li>
+              </ul>
+            </nav>
+            <a href="/">  
+                <div class="logo-container">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+          </div>
+        </header>
+      
+
+        <!-- CONTENT ----------------------->
+        <div class="content">
+            <section class="hero">
+    <div class="small-container">
+        <h2>your local game shop.<br>online.</h2>
+    </div>
+</section>
+
+<div class="container">
+    <p class="post-hero center-text spacing"><strong style="color:#c70b0b;">bit.vintage</strong> serves the freshest used games and tech on the internet. We strive to provide top quality merchandise you will be excited to buy.<br>
+    Working hard from the Pacific Northwest.</p>
+</div>
+
+<div class="container">
+    
+    <div class="columns spacing">
+        <div class="column half">
+            <img src="/images/games.jpg" width="430" alt="Beans">
+        </div>
+        
+        <div class="column half">
+            <h3 style="color:#c70b0b;">games</h3>
+            <p>Nintendo, Sega, PlayStation, and more, from any generation that has been, or will ever be!</p>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+
+    <div class="columns spacing">
+        <div class="column half">
+            <h3 style="color:#c70b0b;">electronics</h3>
+            <p>Consoles, speakers, tablets, and phones, among other useful media centric electronics!</p>
+        </div>
+
+        <div class="column half">
+            <img src="/images/electronics.jpg" width="430" alt="Desk">
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+
+    <div class="columns spacing">
+        <div class="column half">
+            <img src="/images/more.jpg" width="430" alt="location">
+        </div>
+    
+        <div class="column half">
+            <h3 style="color:#c70b0b;">vinyl, comics, and more!</h3>
+            <p>Selling games is our primary objective, but we keep a variety of interesting popular culture related merchandise on hand!</p>
+        </div>
+    </div>
+    
+    <div class="divider"></div>
+    
+    
+    <!-- REVIEWS -->
+    <div class="slideshow-container">
+        <h1>
+            customer reviews
+        </h1>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="/images/review1.jpg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="/images/review2.jpg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="/images/review3.jpg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="/images/review4.jpg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+    </div>
+    <br>
+    
+</div>
+        </div>
+      
+      
+        <!-- FOOTER ----------------------->
+        <footer>
+            <a href="/">  
+                <div class="logo-container footer-logo">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+            <div class="container copyright">
+                Copyright &copy; <script type="text/javascript">
+                document.write("2019 - "+ new Date().getFullYear());
+                </script> <!-- bitvintagegalleria.com -->
+            </div>
+        </footer>
+    </body>
+   
+
+    <!-- SLIDE SHOW SCRIPT -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4500);
+        }
+    </script>
+    
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900" rel="stylesheet">  
+    <link rel="icon" href="/images/bitvintage-favicon.ico">
+  </head>
+  <body>
+
+        <!-- HEADER ----------------------->
+        <header>
+          <div class="container">
+            <nav class="main-nav">
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/blog.html">updates</a></li>
+                <li><a href="https://www.mercari.com/u/560477422/">shop</a></li>
+                <li><a href="/tenoff.html">$10 OFF</a></li>
+              </ul>
+            </nav>
+            <a href="/">  
+                <div class="logo-container">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+          </div>
+        </header>
+      
+
+        <!-- CONTENT ----------------------->
+        <div class="content">
+            {{ content }}
+        </div>
+      
+      
+        <!-- FOOTER ----------------------->
+        <footer>
+            <a href="/">  
+                <div class="logo-container footer-logo">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+            <div class="container copyright">
+                Copyright &copy; <script type="text/javascript">
+                document.write("2019 - "+ new Date().getFullYear());
+                </script> <!-- bitvintagegalleria.com -->
+            </div>
+        </footer>
+    </body>
+   
+
+    <!-- SLIDE SHOW SCRIPT -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4500);
+        }
+    </script>
+    
+</html>

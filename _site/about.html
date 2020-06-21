@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900" rel="stylesheet">  
+    <link rel="icon" href="/images/bitvintage-favicon.ico">
+  </head>
+  <body>
+
+        <!-- HEADER ----------------------->
+        <header>
+          <div class="container">
+            <nav class="main-nav">
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/blog.html">updates</a></li>
+                <li><a href="https://www.mercari.com/u/560477422/">shop</a></li>
+                <li><a href="/tenoff.html">$10 OFF</a></li>
+              </ul>
+            </nav>
+            <a href="/">  
+                <div class="logo-container">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+          </div>
+        </header>
+      
+
+        <!-- CONTENT ----------------------->
+        <div class="content">
+            <section class="hero">
+    <div class="small-container">
+        <h2>about bit.vintage</h2>
+    </div>
+</section><br>
+
+<div class="container">
+    <p class="post-hero"><strong style="color:#c70b0b;">Bit.vintage</strong> is a small shop from the Pacific Northwest.  During these trying times, starting a traditional retail shop is difficult, so we decided to provide that same superior in store experience, online, available directly in your home!</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="container">
+    <p class="post-hero">We take all our own photos, so the item you see, is the exact item you get!  No stock photos, no reused photos, only <strong style="color:#c70b0b;">high quality</strong> images for every <strong style="color:#c70b0b;">unique</strong> item.  We photograph every significant aspect of each item, giving you the same opportunity to evaluate and decide for yourself an item's condition, just like you could if you were browsing in a brick and mortar store!</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="container">
+    <p class="post-hero">All our sales are sold exclusively on <strong style="color:#c70b0b;">Mercari</strong>, a safe online marketplace.  Initially launched in Japan, but now available in the US, Mercari is far superior compared to Amazon and eBay.  Mercari is a much friendlier and easier to use platform!<br><br>
+        
+    Receive <strong style="color:#c70b0b;">$10 off any purchase over $20</strong> as a first time user of Mercari. Opening a Mercari account is free, simply download the Mercari app for iOS or Android, then before creating your account, use your phone to click the link below. You can use your free $10 towards any item on Mercari, not just items from us, but we sure would be appreciative if you chose to spend it with us! <br>
+    <br><a href="https://merc.li/HHeEEtkeb" class="post-hero spacing" style="color:#c70b0b;">Click here for $10 off today!</a></p>
+    
+</div><br>
+
+        </div>
+      
+      
+        <!-- FOOTER ----------------------->
+        <footer>
+            <a href="/">  
+                <div class="logo-container footer-logo">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+            <div class="container copyright">
+                Copyright &copy; <script type="text/javascript">
+                document.write("2019 - "+ new Date().getFullYear());
+                </script> <!-- bitvintagegalleria.com -->
+            </div>
+        </footer>
+    </body>
+   
+
+    <!-- SLIDE SHOW SCRIPT -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4500);
+        }
+    </script>
+    
+</html>

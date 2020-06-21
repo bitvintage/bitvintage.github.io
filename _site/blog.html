@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Updates</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900" rel="stylesheet">  
+    <link rel="icon" href="/images/bitvintage-favicon.ico">
+  </head>
+  <body>
+
+        <!-- HEADER ----------------------->
+        <header>
+          <div class="container">
+            <nav class="main-nav">
+              <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/blog.html">updates</a></li>
+                <li><a href="https://www.mercari.com/u/560477422/">shop</a></li>
+                <li><a href="/tenoff.html">$10 OFF</a></li>
+              </ul>
+            </nav>
+            <a href="/">  
+                <div class="logo-container">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+          </div>
+        </header>
+      
+
+        <!-- CONTENT ----------------------->
+        <div class="content">
+            <section class="hero">
+    <div class="small-container">
+        <h2>updates</h2>
+    </div>
+</section>
+
+<div class="content">
+  <div class="container">
+    <div class="blog-posts">
+      <div class="blog-post spacing">
+        <h3 style="color:#c70b0b;"><!--<a href="/post.html">-->gameboy color kiosk is coming!<!--</a>--></h3>
+        <p class="summary" style="color:#c70b0b;">Information<span class="date">June 19, 2020</span></p>
+        <p>We have got our hands on an extremely rare, and quite vintage, Nintendo Gameboy Color light up store display demo kiosk--what a mouthful!  Securely holds 1 Gameboy Color unit, preventing theft, has classic Gameboy Color decals, and has a powerful light, perfectly situated to ensure maximum visbility while playing the Gameboy Color you decide to show off in the unit!  We expect to be posting this item to Mercari shortly.  Due to the rare nature of this item, we will be considering all offers over a longer than normal span.</p>
+      </div>
+    <div class="divider"></div>
+      <div class="blog-post spacing">
+        <h3 style="color:#c70b0b;"><!--<a href="/post.html">-->new site launch<!--</a>--></h3>
+        <p class="summary" style="color:#c70b0b;">Information<span class="date">June 03, 2019</span></p>
+        <p>We are excited to get up and running! Our site, while minimal now, will be a useful spot to learn about updates for upcoming and rare items that will go up for sale, as well promotional information! Currently we sell everything exclusively through the Mercari online marketplace, which is a protected platform for both buyers and sellers. We are looking at ways to safely and securely accept direct payments so we can be even more competitive with pricing!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+      
+        <!-- FOOTER ----------------------->
+        <footer>
+            <a href="/">  
+                <div class="logo-container footer-logo">
+                    <img src="/images/bitvintage-logo-main.png" alt="BitVintage Logo" class="logo-image">
+                </div>
+            </a>
+            <div class="container copyright">
+                Copyright &copy; <script type="text/javascript">
+                document.write("2019 - "+ new Date().getFullYear());
+                </script> <!-- bitvintagegalleria.com -->
+            </div>
+        </footer>
+    </body>
+   
+
+    <!-- SLIDE SHOW SCRIPT -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4500);
+        }
+    </script>
+    
+</html>
